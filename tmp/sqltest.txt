@@ -1,0 +1,15 @@
+SELECT DISTINCT mkfgoomi.GOO_NA,mkfplumi.PLU_NO,mkfgosmi.SAP_TNT_ID, mkfgosmi.GOO_NO ,mkfgoomi.SUP_NO,mkfgoomi.SSUNT_NA, SEVEN.HKUNNR, CONVERT(INT,LFA1.LIFNR) AS SUPNO,LFA1.NAME1 ,mkfgoomi.TAX_TYPE,mkfgosmi.SPRICE 
+
+FROM [EC].[dbo].[mkfgosmi] 
+
+INNER JOIN EC.dbo.KNVH AS SEVEN ON SEVEN.[KUNNR]= '000'+mkfgosmi.[SAP_TNT_ID] and CONVERT(varchar,getdate()+1,111)between SEVEN.DATAB and SEVEN.DATBI 
+
+INNER JOIN EC.dbo.mkfgoomi ON mkfgosmi.[GOO_NO] = mkfgoomi.[GOO_NO] 
+
+INNER JOIN EC.dbo.mkfplumi ON mkfplumi.[GOO_NO] = mkfgoomi.[GOO_NO] 
+
+INNER JOIN EC.dbo.KNVH AS SIX ON SIX.KUNNR = SEVEN.HKUNNR and CONVERT(varchar,getdate()+1,111)between SIX.DATAB and SIX.DATBI 
+
+INNER JOIN EC.dbo.LFA1 ON LFA1.LIFNR = SIX.HKUNNR 
+
+where mkfgosmi.STR_NO = '005' and mkfgosmi.GOO_NO not like '99000%'

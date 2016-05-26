@@ -1,0 +1,354 @@
+﻿<!-- 
+  _____  U _____ u    _      __  __    ___      _  _   
+ |_ " _| \| ___"|/U  /"\  uU|' \/ '|u / _"\  u | ||"|  
+   | |    |  _|"   \/ _ \/ \| |\/| |/| / U |/  | || |_ 
+  /| |\   | |___   / ___ \  | |  | | | \// |,-.|__   _|
+ u |_|U   |_____| /_/   \_\ |_|  |_|  \___/(_/   /|_|\ 
+ _// \\_  <<   >>  \\    >><<,-,,-.    //       u_|||_u
+(__) (__)(__) (__)(__)  (__)(./  \.)  (__)      (__)__)
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>WebHDFS_team04</title>
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="/static/css/freelancer.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="/static/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body id="page-top" class="index">
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#page-top">Browse Directory</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#portfolio">_Team04</a>
+                    </li>
+                 <!--    <li class="page-scroll">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Contact</a>
+                    </li> -->
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    {% block content %}
+    {% endblock %}
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>Members</h3>
+                        <p>s1011637<br>s1011659<br>s1021429</p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Around the Web</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- <div class="footer-col col-md-4"> -->
+                        <!-- <h3>Connection</h3> -->
+                        <!-- <img src="/static/img/portfolio/cabin.png" class="img-responsive img-centered" alt=""> -->
+                       <!--  <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p> -->
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; Hadoop_Partices 2016
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll visible-xs visible-sm">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <!-- jQuery -->
+    <script type="text/javascript">
+        var $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+    </script>
+    <script src="/static/js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/static/js/bootstrap.min.js"></script> 
+    <script src="/static/js/bootstrap-filestyle.min.js"></script> 
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="/static/js/classie.js"></script>
+    <script src="/static/js/cbpAnimatedHeader.js"></script>
+    <script src="/static/js/moment.js"></script>
+    <!-- Contact Form JavaScript -->
+    <script src="/static/js/jqBootstrapValidation.js"></script>
+    <script src="/static/js/contact_me.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="/static/js/freelancer.js"></script>
+    <script>
+    var ajaxThis;
+        $(function() {
+            $('#alert-panel').hide();
+            $(":file").filestyle({buttonName: "btn-primary"});
+            var cur_loca = "";
+            var myAJAX = new initAJAX();   //new ajax object
+            myAJAX.ajaxHandle.init();       //init ajax
+            buttonInit();
+
+
+        });
+
+         function initAJAX(){
+
+           this.ajaxHandle = {
+
+               init: function(){
+                    var tempthis = this ;
+                    var filePath = $('input[name="cur_url"]').val();
+                    this.GetDirList(filePath);
+                    $("button.delete_btn").click(function(e){
+                    e.preventDefault();
+                     var getLocation = this.name;
+                    });
+
+                    $("button#get_list").click(function(e){
+                    filePath = $('input[name="cur_url"]').val();
+                    e.preventDefault();
+                    tempthis.GetDirList(filePath);
+                    });
+               },
+               DeleteDir: function(getLocation){
+                var tempthis = this ;
+                ajaxThis = tempthis;
+                 $.ajax({
+                   type:"GET",
+                   url: $SCRIPT_ROOT + "/_del_list",
+                   dataType: 'json', 
+                   data: { 
+                            cur_url: getLocation
+                         },
+                   success: function(data) 
+                         {
+                            var d = get_response(data, 'boolean');
+                            if (d === null) {
+                              show_err_msg(get_response_err_msg(data));
+                              return;
+                            }else{
+                             alert("Delete File success: " + data.boolean);
+                             tempthis.GetDirList(filePath);
+                              }
+                         },
+                   error: function(xhr, ajaxOptions, thrownError) 
+                         {
+                           console.log(xhr.status);
+                           console.log(thrownError);
+                         }
+                });
+              },
+               GetDirList: function(filePath){
+                 $.ajax({
+                   type:"GET",
+                   url: $SCRIPT_ROOT + "/_get_list",
+                   dataType: 'json', 
+
+                   data: { 
+                            cur_url: filePath
+                         },
+                   success: function(data) 
+                         {
+                           check_response(data, "FileStatuses");
+                         },
+                   beforeSend: function(){
+
+                        var loading = '<img id="loading" class="img-responsive img-centered" src="/static/img/portfolio/ajax-loader.gif" alt="">';
+                        $("#result2").after(loading);
+
+                    },
+                   complete: function(){
+                        $("#loading").remove();
+
+                    },
+                   error: function(xhr, ajaxOptions, thrownError) 
+                         {
+                           console.log(xhr.status);
+                           console.log(thrownError);
+                         }
+                });
+              }
+
+            }
+          }
+          function buttonInit(){
+            $("#upload_bt").click(function(e){
+                e.preventDefault();
+                showUplModal();
+            });
+          }
+
+          function showUplModal(){
+            $("#UplModal .modal-body strong").remove();
+            $("#UplModal .modal-body").prepend('<strong>Upload location: <p>"' + cur_loca + '"</p></strong>');
+            // $("#UplModal #modal_del").prop("name",path);
+            $('#UplModal').modal('show');
+          }
+
+          function showDelModal(e, path){
+            e.preventDefault();
+            $("#DelModal .modal-body strong").remove();
+            $("#DelModal .modal-body").append('<strong>Are you sure to delete the file: <p>"' + path + '"</p></strong>');
+            $("#modal_del").prop("name",path);
+            $('#DelModal').modal('show');
+          }
+
+          function delEvent(path){
+            var myAJAX = new initAJAX();
+            myAJAX.ajaxHandle.DeleteDir(path);
+          }
+
+          function ListDirCallback(resObj){
+            $('div#panel').find('table').remove();
+            var t0 ='<div id=panel style="font-size: 18px;"><table class="table"><thead><tr>'+
+                    '<th style="text-align:center;">Permission</th>'+
+                    '<th style="text-align:center;">Owner</th>'+
+                    '<th style="text-align:center;">Group</th>'+
+                    '<th style="text-align:center;">Size(bytes)</th>'+
+                    '<th style="text-align:center;">Last Modified</th>'+
+                    '<th style="text-align:center;">Replication</th>'+
+                    '<th style="text-align:center;">Block Size</th>'+
+                    '<th style="text-align:center;">Name</th>'+
+                    '</tr></thead><tbody>';
+            if((resObj.length) > 0){
+                $.each(resObj, function(index, data){
+                 t0 += '<tr><td id=dataRow' + index + '>'+data.permission +'</td><td class=dataRow' + index + '>' + data.owner + '</td><td id=dataRow' + index + '>' + data.group + '</td><td id=dataRow' + index + '>' +  Sizecul(data.length) + '</td><td id=dataRow' + index + '>' + moment(data.modificationTime).format('YYYY/MM/DD HH:MM') + '</td><td id=dataRow' + index + '>'+  data.replication + '</td><td id=dataRow' + index + '>' + Sizecul(data.blockSize) + '</td>';
+                 if(data.type == "DIRECTORY"){
+                    t0 +=  '<td id=dataRow' + index + '>' + '<a href="#" class="btn" name=/'+ data.pathSuffix +' Onclick="dirNext(this.name)" style="color:#fff; text-decoration: underline;">'+ data.pathSuffix + '</a></td>';
+                 }else{
+                    t0 +=  '<td id=dataRow' + index + '>' + data.pathSuffix +'</td>';
+                 }
+                 t0 += '<td id=dataRow' + index + '>'+'<a href="#" class="delete_btn'+ index +' btn btn-outline" name='+ cur_loca+'/'+ data.pathSuffix + ' style="margin-top: 0px;padding:3px 5px;font-size:10px" Onclick="showDelModal(event,this.name)">' +'delete'+'</a>'+'</td></tr>'
+
+                });
+        }else{  
+            t0 +='<tr><td colspan="8">' + "No files here." + '</td></tr>' ;
+        }
+            t0+= '</tbody></table></div>'
+            $('#result2').after(t0);
+    }
+
+    function dirNext(fileName){
+        var myAJAX = new initAJAX();
+        var filePath = cur_loca + fileName;
+        myAJAX.ajaxHandle.GetDirList(filePath);
+        $('input[name="cur_url"]').val(filePath);
+        // alert(fileName);
+    }
+
+     function Sizecul (v) {
+          var UNITS = ['B', 'KB', 'MB', 'GB', 'TB', 'PB', 'ZB'];
+          var prev = 0, i = 0;
+          while (Math.floor(v) > 0 && i < UNITS.length) {
+            prev = v;
+            v /= 1024;
+            i += 1;
+          }
+
+          if (i > 0 && i < UNITS.length) {
+            v = prev;
+            i -= 1;
+          }
+          return Math.round(v * 100) / 100 + ' ' + UNITS[i];
+    }
+
+    function check_response(data, type){
+        var d = get_response(data, type);
+        if (d === null) {
+            show_err_msg(get_response_err_msg(data));
+            return;
+        }else{
+            var resObj = data.FileStatuses.FileStatus;
+            var v = $('input[name="cur_url"]').val();
+            if(v.substring(v.length-1,v.length)== '/'){
+                cur_loca = v.substring(0,v.length-1);
+            }else{
+            cur_loca = v;
+            }
+            ListDirCallback(resObj);
+        }
+    }
+
+    function get_response(data, type) {
+        return data[type] !== undefined ? data[type] : null;
+    }
+
+    function get_response_err_msg(data) {
+        return data.RemoteException !== undefined ? data.RemoteException.message : "";
+    }
+
+    function show_err_msg(msg) {
+        $('#alert-panel-body').html("Error: " + msg);
+        $('#alert-panel').slideDown();
+        $('html, body').animate({ scrollTop: $('#header_input').offset().top }, 'slow');
+    }
+
+    </script>
+</body>
+</html>
